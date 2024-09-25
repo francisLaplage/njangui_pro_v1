@@ -25,8 +25,11 @@ public class NjanguiproApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		
 		this.membreRepository.save(new Membre(0,"Simpson","Bart"));
-		this.membreRepository.save(new Membre(0,"Simpson","Bart"));
-		this.membreRepository.save(new Membre(0,"Simpson","Bart"));
+		this.membreRepository.save(new Membre(0,"Simpson","Lisa"));
+		this.membreRepository.save(new Membre(0,"Simpson","Omer"));
+		
+		/*************************************************/
+		System.out.println(this.membreRepository.findAll());
 		
 	}
 }
