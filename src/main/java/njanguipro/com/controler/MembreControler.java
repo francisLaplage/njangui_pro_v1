@@ -19,7 +19,7 @@ import jakarta.transaction.Transactional;
 import njanguipro.com.entitie.Membre;
 import njanguipro.com.repository.MembreRepository;
 
-@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = {"http://phoenixawsbucket.s3-website.eu-west-3.amazonaws.com/","http://localhost:4200/"})
 @Transactional
 @RestController
 @RequestMapping("/api")
